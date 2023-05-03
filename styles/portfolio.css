@@ -1,4 +1,39 @@
-h1 {
+:root {
+  --primary-color: #fef4f2;
+  --secondary-color: #8bf0ba;
+  --tertiary-color: #f95e9b;
+  --text-color: #1e273a;
+  --primary-font: "Montserrat", sans-serif;
+  --secondary-font: "Lora", serif;
+}
+
+.hero {
+  background-color: var(--primary-color);
   text-align: center;
-  font-family: "Montserrat", sans-serif;
+  font-family: var(--primary-font);
+  color: var(--text-color);
+
+  display: block;
+  margin: 0 auto;
+  padding: 18px;
+}
+
+.hero h2 {
+  font-family: var(--secondary-font);
+  color: var(--text-color);
+}
+.hero h1 {
+  font-size: 70px;
+}
+
+.hero p {
+  font-size: 42px;
+  color: var(--text-color);
+  font-family: var(--secondary-font);
+}
+
+.btn {
+  background-color: #ff7988;
+  color: aliceblue;
+  font-size: 20px;
 }
