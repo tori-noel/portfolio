@@ -5,6 +5,7 @@
   --text-color: #1e273a;
   --primary-font: "Montserrat", sans-serif;
   --secondary-font: "Lora", serif;
+  --box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
 .hero {
@@ -55,20 +56,30 @@ h2 {
 
 img {
   max-width: 600px;
+  box-shadow: var(--box-shadow);
 }
 
-@media (max-width: 375px) {
-  .hero h1 {
-    font-size: 45px;
+@media (max-width: 900px) {
+  .descriptions {
+    text-align: center;
+    padding: 0;
   }
+  .hero h1 {
+    font-size: 50px;
+  }
+}
+
+@media (max-width: 300px) {
   .hero p {
-    font-size: 24px;
+    font-size: 18px;
   }
   .hero h2 {
-    font-size: 20px;
-    text-align: left;
+    display: none;
   }
-  .hero btn {
-    font-size: 12px;
+  .hero h1 {
+    font-size: 42px;
+  }
+  .hero {
+    padding: 0;
   }
 }
