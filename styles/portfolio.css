@@ -12,10 +12,9 @@
   text-align: center;
   font-family: var(--primary-font);
   color: var(--text-color);
-
   display: block;
   margin: 0 auto;
-  padding: 18px;
+  padding: 120px;
 }
 
 .hero h2 {
@@ -36,4 +35,40 @@
   background-color: #ff7988;
   color: aliceblue;
   font-size: 20px;
+}
+
+p {
+  font-family: var(--primary-font);
+  font-size: 42px;
+  text-align: center;
+}
+
+.descriptions {
+  font-size: 18px;
+}
+
+h2 {
+  font-family: var(--secondary-font);
+  color: var(--text-color);
+  text-align: center;
+}
+
+img {
+  max-width: 600px;
+}
+
+@media (max-width: 375px) {
+  .hero h1 {
+    font-size: 45px;
+  }
+  .hero p {
+    font-size: 24px;
+  }
+  .hero h2 {
+    font-size: 20px;
+    text-align: left;
+  }
+  .hero btn {
+    font-size: 12px;
+  }
 }
