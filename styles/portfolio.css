@@ -55,7 +55,6 @@ h2 {
 }
 
 img {
-  max-width: 600px;
   box-shadow: var(--box-shadow);
 }
 
