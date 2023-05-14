@@ -1,15 +1,16 @@
 :root {
-  --primary-color: #fef4f2;
-  --secondary-color: #8bf0ba;
-  --tertiary-color: #f95e9b;
-  --text-color: #1e273a;
+  --primary-color: rgb(120, 245, 234);
+
+  --secondary-color: #f95e9b;
+  --tertiary-color: #71f1ad;
+  --text-color: rgb(169, 191, 242);
   --primary-font: "Montserrat", sans-serif;
   --secondary-font: "Lora", serif;
   --box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
 .hero {
-  background-color: var(--primary-color);
+  background: var(--primary-color);
   text-align: center;
   font-family: var(--primary-font);
   color: var(--text-color);
@@ -33,7 +34,8 @@
 }
 
 .btn {
-  background-color: #ff7988;
+  background-color: var(--tertiary-color);
+
   color: aliceblue;
   font-size: 20px;
 }
@@ -125,4 +127,28 @@ nav li.active a {
 }
 .portrait {
   max-width: 400px;
+}
+
+footer .email-link {
+  text-decoration: none;
+  color: var(--text-color);
+  font-size: 24px;
+}
+footer .email-link:hover {
+  color: var(--secondary-color);
+}
+footer {
+  margin: 60px 0;
+  background-color: var(--primary-color);
+}
+
+footer .social-links a {
+  font-family: var(--primary-font);
+  text-decoration: none;
+  font-size: 24px;
+  color: var(--secondary-color);
+  padding: 10px;
+}
+footer .social-links a:hover {
+  color: var(--tertiary-color);
 }
