@@ -1,11 +1,11 @@
 :root {
-  --primary-color: rgb(120, 245, 234);
+  --primary-color: rgb(255, 214, 112);
 
-  --secondary-color: #f95e9b;
-  --tertiary-color: #71f1ad;
-  --text-color: rgb(169, 191, 242);
+  --secondary-color: rgb(112, 214, 255);
+  --tertiary-color: rgb(255, 105, 235);
+  --text-color: aliceblue;
   --primary-font: "Montserrat", sans-serif;
-  --secondary-font: "Lora", serif;
+  --secondary-font: "Pathway Extreme", sans-serif;
   --box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
@@ -59,7 +59,7 @@ h1 {
 h2,
 h3 {
   font-family: var(--secondary-font);
-  color: var(--text-color);
+  color: var(--secondary-color);
   text-align: center;
 }
 
@@ -82,11 +82,11 @@ nav li {
 
 nav a {
   text-decoration: none;
-  color: var(--text-color);
+  color: var(--secondary-color);
 }
 nav a:hover,
 nav li.active a {
-  color: var(--secondary-color);
+  color: var(--primary-color);
 }
 @media (max-width: 900px) {
   .descriptions {
