@@ -5,39 +5,35 @@
   --tertiary-color: #ffbdf7;
   --text-color: #e095df;
   --primary-font: "Montserrat", sans-serif;
-  --secondary-font: "Pathway Extreme", sans-serif;
   --box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
-
+.container {
+  font-family: var(--primary-font);
+}
 .hero {
   background: var(--primary-color);
   text-align: center;
-  font-family: var(--primary-font);
   color: var(--text-color);
   display: block;
   margin: 0 auto;
-  padding: 120px;
+  padding: 120px 120px 80px 120px;
 }
-
+.hero h1 {
+  font-size: 80px;
+}
 .hero h2 {
-  font-family: var(--secondary-font);
   color: var(--text-color);
+  font-size: 60px;
 }
 
 .hero p {
   font-size: 42px;
   color: var(--text-color);
-  font-family: var(--secondary-font);
-}
-.hero a {
-  text-decoration: none;
-  color: var(--tertiary-color);
-  font-size: 32px;
-}
-.hero a:hover {
-  color: var(--text-color);
 }
 
+.portrait {
+  max-width: 300px;
+}
 .btn {
   background-color: var(--primary-color);
   color: var(--text-color);
@@ -45,9 +41,9 @@
 }
 .btn:hover {
   background-color: var(--secondary-color);
+  color: var(--primary-color);
 }
 p {
-  font-family: var(--primary-font);
   font-size: 42px;
   text-align: center;
 }
@@ -55,7 +51,6 @@ p {
 .descriptions {
   font-size: 18px;
   text-align: center;
-
   padding: 20px;
 }
 img {
@@ -63,9 +58,7 @@ img {
   box-shadow: var(--box-shadow);
   padding: 5px;
 }
-.portrait {
-  max-width: 400px;
-}
+
 footer .email-link {
   text-decoration: none;
   color: var(--text-color);
@@ -80,7 +73,6 @@ footer {
 }
 
 footer .social-links a {
-  font-family: var(--primary-font);
   text-decoration: none;
   font-size: 24px;
   color: var(--secondary-color);
@@ -92,19 +84,12 @@ footer .social-links a:hover {
 h1 {
   text-align: center;
   color: var(--secondary-color);
-  font-family: var(--primary-font);
 }
 h2,
 h3 {
-  font-family: var(--secondary-font);
   color: var(--secondary-color);
   text-align: center;
   font-size: 30px;
-}
-
-img {
-  box-shadow: var(--box-shadow);
-  text-align: center;
 }
 
 nav ul {
@@ -116,7 +101,7 @@ nav li {
   list-style: none;
   line-height: 40px;
   margin-left: 30px;
-  font-family: var(--primary-font);
+
   font-weight: 500;
 }
 
@@ -127,6 +112,19 @@ nav a {
 nav a:hover,
 nav li.active a {
   color: var(--text-color);
+}
+
+.content-container {
+  background-color: var(--primary-color);
+  text-align: center;
+  color: var(--text-color);
+  display: block;
+  margin: 0 auto;
+  padding: 120px;
+}
+.content-container p {
+  font-size: 24px;
+  font-weight: 500;
 }
 
 @media (max-width: 900px) {
@@ -152,21 +150,4 @@ nav li.active a {
   .hero {
     padding: 0;
   }
-}
-
-.content-container {
-  background-color: var(--primary-color);
-  text-align: center;
-  font-family: var(--primary-font);
-  color: var(--text-color);
-  display: block;
-  margin: 0 auto;
-  padding: 120px;
-}
-.content-container p {
-  font-size: 24px;
-  font-weight: 500;
-}
-.portrait {
-  max-width: 400px;
 }
