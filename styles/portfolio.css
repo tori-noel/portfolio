@@ -18,6 +18,13 @@
   margin: 0 auto;
   padding: 120px 120px 80px 120px;
 }
+.contact-page {
+  background: var(--primary-color);
+  text-align: center;
+  color: var(--text-color);
+  display: block;
+  margin: 0 auto;
+}
 .hero h1 {
   font-size: 80px;
 }
@@ -30,7 +37,19 @@
   font-size: 42px;
   color: var(--text-color);
 }
-
+.hero ul li {
+  list-style-type: none;
+  padding: 10px;
+  font-size: 24px;
+}
+.hero .horizontal-list {
+  display: inline;
+  margin: 0;
+  padding-left: 0;
+}
+.hero .horizontal-list i {
+  font-size: 30px;
+}
 .portrait {
   max-width: 300px;
 }
@@ -101,8 +120,8 @@ nav li {
   list-style: none;
   line-height: 40px;
   margin-left: 30px;
-
   font-weight: 500;
+  font-size: 16px;
 }
 
 nav a {
@@ -126,14 +145,35 @@ nav li.active a {
   font-size: 24px;
   font-weight: 500;
 }
-
+a {
+  text-decoration: none;
+  color: var(--text-color);
+  font-size: 24px;
+}
+a:hover {
+  color: var(--secondary-color);
+}
 @media (max-width: 900px) {
   .descriptions {
     text-align: center;
     padding: 0;
   }
-  .hero h1 {
-    font-size: 50px;
+  .hero h1,
+  h2 {
+    font-size: 30px;
+    text-align: center;
+  }
+  .hero .portrait {
+    display: none;
+  }
+  .hero .skills {
+    display: none;
+  }
+  f .portrait {
+    max-width: 150px;
+  }
+  .content-container p {
+    font-size: 12px;
   }
 }
 
@@ -145,7 +185,8 @@ nav li.active a {
     display: none;
   }
   .hero h1 {
-    font-size: 42px;
+    font-size: 30px;
+    text-align: left;
   }
   .hero {
     padding: 0;
